@@ -22,7 +22,7 @@ jobs:
           dotnet-version: '7.0.x'
 
       - name: Restore
-        run:  dotnet restore ./GithubActionsDemo.sln
+        run:  dotnet restore ./ActionsDemo/ActionsDemo.csproj
 
       - name: Build
         run: dotnet build ./GithubActionsDemo.sln --configuration Release --no-restore
