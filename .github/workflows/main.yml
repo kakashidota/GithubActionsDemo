@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+    - master
 
 env:
   AZURE_WEBAPP_NAME: actionsdemo123
