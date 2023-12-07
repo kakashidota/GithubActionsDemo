@@ -25,8 +25,8 @@ jobs:
         run:  dotnet restore ./ActionsDemo/ActionsDemo.csproj
 
       - name: Build
-        run: dotnet build ./GithubActionsDemo.sln --configuration Release --no-restore
+        run: dotnet build ./ActionsDemo/ActionsDemo.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./GithubActionsDemo.sln --configuration Release --no-build
+        run: dotnet publish ./ActionsDemo/ActionsDemo.csproj --configuration Release --no-build
         
